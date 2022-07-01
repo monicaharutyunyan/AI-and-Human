@@ -3,7 +3,7 @@
 This is an example from Dylan and Sophia's TUMO workshop on designing an interactive storytelling chatbot. All the code here was written during and for this course.
 
 I recommend checking out the example I have in the `modules` folder to get a sense for how to create an interactive story.
-##GitHub Token
+## GitHub Token
 
 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
 
