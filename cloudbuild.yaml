@@ -1,0 +1,13 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy']
+- name: node:16.15.0
+  entrypoint: npm
+  args: ["install"]
+- name: node:16.15.0
+  entrypoint: npm
+  args: ["run", "create-env"]
+  env: 
+    - 'BOT_TOKEN=${_BOT_TOKEN}'
+timeout: '1600s'
